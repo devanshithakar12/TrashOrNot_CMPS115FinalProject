@@ -14,6 +14,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     var cloudsightQuery: CloudSightQuery!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,6 +28,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
 
     @IBAction func cameraButtonPressed(_ sender: Any) {
+        
+        //self.printMessagesForUser()
+        //self.makeGetCall()
+    
 
         // Check to see if the Camera is available
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
@@ -73,16 +78,57 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     func cloudSightQueryDidFinishIdentifying(_ query: CloudSightQuery!) {
         print("cloudSightQueryDidFinishIdentifying")
+        
+        func printMessagesForUser() -> Void {
+            let json = ["apiresult":query.name()]
+            do {
+                let jsonData = try JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
+                
+                let url = NSURL(string: "http://127.0.0.1:5000/")!
+                let request = NSMutableURLRequest(url: url as URL)
+                request.httpMethod = "POST"
+                
+                request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+                request.httpBody = jsonData
+                
+                let task = URLSession.shared.dataTask(with: request as URLRequest){ data, response, error in
+                    if error != nil{
+                        print("Error -> \(String(describing: error))")
+                        return
+                    }
+                    do {
+                        let result = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [String:String]
+                        print("Result -> \(String(describing: result))")
+                        
+                        DispatchQueue.main.async {
+                            for (_, value) in result! {
+                               
+                                self.resultLabel.text = value
+                                self.activityIndicatorView.stopAnimating()
+                            }
+                        }
+                        
+                        
+                    } catch {
+                        print("Error -> \(error)")
+                    }
+                }
+                
+                task.resume()
+            } catch {
+                print(error)
+            }
+        }
 
         // CloudSight runs in a background thread, and since we're only
         // allowed to update UI in the main thread, let's make sure it does.
-        DispatchQueue.main.async {
-            self.resultLabel.text = query.name()
-            self.activityIndicatorView.stopAnimating()
-        }
+        
     }
     
     func cloudSightQueryDidFail(_ query: CloudSightQuery!, withError error: Error!) {
-        print("CloudSight Failure: \(error)")
+        print("CloudSight Failure: \(String(describing: error))")
     }
+    
+    
+    
 }
