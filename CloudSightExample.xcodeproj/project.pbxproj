@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		140FCD1095182DD8E55BD95F /* Pods_CloudSightExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3065D4DD2E8BC831F71FD2 /* Pods_CloudSightExample.framework */; };
 		3DD7AAA7CFEA7C9E0CC3B1E6 /* Pods_CloudSightExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EB6714EF6AE4CB25C5D7AF /* Pods_CloudSightExampleTests.framework */; };
+		65E0CBA021B1CC3000B965E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FEB2851E7DCB290035AE4B /* ViewController.swift */; };
+		65E0CBA121B1CC3400B965E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FEB2851E7DCB290035AE4B /* ViewController.swift */; };
+		65E0CBA321B2051100B965E1 /* ecoplus.png in Resources */ = {isa = PBXBuildFile; fileRef = 65E0CBA221B2051100B965E1 /* ecoplus.png */; };
+		65E0CBAA21B213C300B965E1 /* frontpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E0CBA921B213C300B965E1 /* frontpage.swift */; };
 		67FEB2841E7DCB290035AE4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FEB2831E7DCB290035AE4B /* AppDelegate.swift */; };
 		67FEB2861E7DCB290035AE4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FEB2851E7DCB290035AE4B /* ViewController.swift */; };
 		67FEB2891E7DCB290035AE4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67FEB2871E7DCB290035AE4B /* Main.storyboard */; };
@@ -38,13 +42,14 @@
 
 /* Begin PBXFileReference section */
 		04EB6714EF6AE4CB25C5D7AF /* Pods_CloudSightExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudSightExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A5523F4D1EE9BABB573A0BF /* Pods-CloudSightExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSightExampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudSightExampleUITests/Pods-CloudSightExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2F3065D4DD2E8BC831F71FD2 /* Pods_CloudSightExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudSightExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		369182A59E2D920583F7C6E3 /* Pods-CloudSightExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSightExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudSightExample/Pods-CloudSightExample.debug.xcconfig"; sourceTree = "<group>"; };
-		58B7CA68F2A06A34DD5444A0 /* Pods-CloudSightExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSightExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudSightExampleTests/Pods-CloudSightExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		50CA18135FBB5DAB296542A3 /* Pods-CloudSightExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSightExampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudSightExampleUITests/Pods-CloudSightExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		65E0CBA221B2051100B965E1 /* ecoplus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ecoplus.png; path = ../../../../Downloads/ecoplus.png; sourceTree = "<group>"; };
+		65E0CBA421B2051800B965E1 /* ecoplus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ecoplus.png; sourceTree = "<group>"; };
+		65E0CBA921B213C300B965E1 /* frontpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frontpage.swift; sourceTree = "<group>"; };
 		67FEB2801E7DCB290035AE4B /* CloudSightExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudSightExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67FEB2831E7DCB290035AE4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		67FEB2851E7DCB290035AE4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		67FEB2851E7DCB290035AE4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = CloudSightExample/ViewController.swift; sourceTree = SOURCE_ROOT; };
 		67FEB2881E7DCB290035AE4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67FEB28A1E7DCB290035AE4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67FEB28D1E7DCB290035AE4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,10 +60,12 @@
 		67FEB29F1E7DCB290035AE4B /* CloudSightExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudSightExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67FEB2A31E7DCB290035AE4B /* CloudSightExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSightExampleUITests.swift; sourceTree = "<group>"; };
 		67FEB2A51E7DCB290035AE4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92DAC89D6AE35B63DA570F92 /* Pods-CloudSightExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSightExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudSightExample/Pods-CloudSightExample.release.xcconfig"; sourceTree = "<group>"; };
-		9A989D8211C8E7C6FB1F917A /* Pods-CloudSightExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSightExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudSightExampleUITests/Pods-CloudSightExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		79F40997689F06EAC3DB3731 /* Pods-CloudSightExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSightExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudSightExample/Pods-CloudSightExample.debug.xcconfig"; sourceTree = "<group>"; };
+		7D12890C2E6522B7AFCF2F7A /* Pods-CloudSightExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSightExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudSightExampleTests/Pods-CloudSightExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		83088F5A538E8990BB67EA65 /* Pods-CloudSightExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSightExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudSightExampleTests/Pods-CloudSightExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A61EAE98329535440E443667 /* Pods_CloudSightExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudSightExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAFBF97BC420501A00EAF2AE /* Pods-CloudSightExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSightExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudSightExampleTests/Pods-CloudSightExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A99696FB9120163957480A56 /* Pods-CloudSightExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSightExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudSightExampleUITests/Pods-CloudSightExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB4623CCE473F877486422CF /* Pods-CloudSightExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSightExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudSightExample/Pods-CloudSightExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +96,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09DA65C8F813A988A230E4F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79F40997689F06EAC3DB3731 /* Pods-CloudSightExample.debug.xcconfig */,
+				BB4623CCE473F877486422CF /* Pods-CloudSightExample.release.xcconfig */,
+				83088F5A538E8990BB67EA65 /* Pods-CloudSightExampleTests.debug.xcconfig */,
+				7D12890C2E6522B7AFCF2F7A /* Pods-CloudSightExampleTests.release.xcconfig */,
+				A99696FB9120163957480A56 /* Pods-CloudSightExampleUITests.debug.xcconfig */,
+				50CA18135FBB5DAB296542A3 /* Pods-CloudSightExampleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		366AD64E093F89C2B7821DF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,12 +122,13 @@
 		67FEB2771E7DCB290035AE4B = {
 			isa = PBXGroup;
 			children = (
+				65E0CBA221B2051100B965E1 /* ecoplus.png */,
 				67FEB2821E7DCB290035AE4B /* CloudSightExample */,
 				67FEB2971E7DCB290035AE4B /* CloudSightExampleTests */,
 				67FEB2A21E7DCB290035AE4B /* CloudSightExampleUITests */,
 				67FEB2811E7DCB290035AE4B /* Products */,
-				69C0B7FAF521160A43E09200 /* Pods */,
 				366AD64E093F89C2B7821DF5 /* Frameworks */,
+				09DA65C8F813A988A230E4F6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +147,8 @@
 			children = (
 				67FEB2831E7DCB290035AE4B /* AppDelegate.swift */,
 				67FEB2851E7DCB290035AE4B /* ViewController.swift */,
+				65E0CBA921B213C300B965E1 /* frontpage.swift */,
+				65E0CBA421B2051800B965E1 /* ecoplus.png */,
 				67FEB2871E7DCB290035AE4B /* Main.storyboard */,
 				67FEB28A1E7DCB290035AE4B /* Assets.xcassets */,
 				67FEB28C1E7DCB290035AE4B /* LaunchScreen.storyboard */,
@@ -150,19 +173,6 @@
 				67FEB2A51E7DCB290035AE4B /* Info.plist */,
 			);
 			path = CloudSightExampleUITests;
-			sourceTree = "<group>";
-		};
-		69C0B7FAF521160A43E09200 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				369182A59E2D920583F7C6E3 /* Pods-CloudSightExample.debug.xcconfig */,
-				92DAC89D6AE35B63DA570F92 /* Pods-CloudSightExample.release.xcconfig */,
-				CAFBF97BC420501A00EAF2AE /* Pods-CloudSightExampleTests.debug.xcconfig */,
-				58B7CA68F2A06A34DD5444A0 /* Pods-CloudSightExampleTests.release.xcconfig */,
-				9A989D8211C8E7C6FB1F917A /* Pods-CloudSightExampleUITests.debug.xcconfig */,
-				2A5523F4D1EE9BABB573A0BF /* Pods-CloudSightExampleUITests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,11 +243,15 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "CloudSight, Inc.";
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					67FEB27F1E7DCB290035AE4B = {
 						CreatedOnToolsVersion = 8.2.1;
+<<<<<<< HEAD
 						DevelopmentTeam = 8RWH8F7W8S;
+=======
+						DevelopmentTeam = 7PQ4VBXMHW;
+>>>>>>> 07ba6a69d7b656e786c4e8b55aae9d9b602cfdb8
 						ProvisioningStyle = Automatic;
 					};
 					67FEB2931E7DCB290035AE4B = {
@@ -278,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67FEB28E1E7DCB290035AE4B /* LaunchScreen.storyboard in Resources */,
+				65E0CBA321B2051100B965E1 /* ecoplus.png in Resources */,
 				67FEB28B1E7DCB290035AE4B /* Assets.xcassets in Resources */,
 				67FEB2891E7DCB290035AE4B /* Main.storyboard in Resources */,
 			);
@@ -383,6 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E0CBAA21B213C300B965E1 /* frontpage.swift in Sources */,
 				67FEB2861E7DCB290035AE4B /* ViewController.swift in Sources */,
 				67FEB2841E7DCB290035AE4B /* AppDelegate.swift in Sources */,
 			);
@@ -392,6 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E0CBA021B1CC3000B965E1 /* ViewController.swift in Sources */,
 				67FEB2991E7DCB290035AE4B /* CloudSightExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E0CBA121B1CC3400B965E1 /* ViewController.swift in Sources */,
 				67FEB2A41E7DCB290035AE4B /* CloudSightExampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,14 +566,21 @@
 		};
 		67FEB2A91E7DCB290035AE4B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 369182A59E2D920583F7C6E3 /* Pods-CloudSightExample.debug.xcconfig */;
+			baseConfigurationReference = 79F40997689F06EAC3DB3731 /* Pods-CloudSightExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = 8RWH8F7W8S;
 				INFOPLIST_FILE = CloudSightExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ai.cloudsight.CloudSightExampleTON1;
+=======
+				DEVELOPMENT_TEAM = 7PQ4VBXMHW;
+				INFOPLIST_FILE = CloudSightExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = project.TONnew.CloudSightExampleTON;
+>>>>>>> 07ba6a69d7b656e786c4e8b55aae9d9b602cfdb8
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -565,14 +590,21 @@
 		};
 		67FEB2AA1E7DCB290035AE4B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92DAC89D6AE35B63DA570F92 /* Pods-CloudSightExample.release.xcconfig */;
+			baseConfigurationReference = BB4623CCE473F877486422CF /* Pods-CloudSightExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = 8RWH8F7W8S;
 				INFOPLIST_FILE = CloudSightExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ai.cloudsight.CloudSightExampleTON1;
+=======
+				DEVELOPMENT_TEAM = 7PQ4VBXMHW;
+				INFOPLIST_FILE = CloudSightExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = project.TONnew.CloudSightExampleTON;
+>>>>>>> 07ba6a69d7b656e786c4e8b55aae9d9b602cfdb8
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -582,7 +614,7 @@
 		};
 		67FEB2AC1E7DCB290035AE4B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAFBF97BC420501A00EAF2AE /* Pods-CloudSightExampleTests.debug.xcconfig */;
+			baseConfigurationReference = 83088F5A538E8990BB67EA65 /* Pods-CloudSightExampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -597,7 +629,7 @@
 		};
 		67FEB2AD1E7DCB290035AE4B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58B7CA68F2A06A34DD5444A0 /* Pods-CloudSightExampleTests.release.xcconfig */;
+			baseConfigurationReference = 7D12890C2E6522B7AFCF2F7A /* Pods-CloudSightExampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -612,7 +644,7 @@
 		};
 		67FEB2AF1E7DCB290035AE4B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A989D8211C8E7C6FB1F917A /* Pods-CloudSightExampleUITests.debug.xcconfig */;
+			baseConfigurationReference = A99696FB9120163957480A56 /* Pods-CloudSightExampleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CloudSightExampleUITests/Info.plist;
@@ -626,7 +658,7 @@
 		};
 		67FEB2B01E7DCB290035AE4B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A5523F4D1EE9BABB573A0BF /* Pods-CloudSightExampleUITests.release.xcconfig */;
+			baseConfigurationReference = 50CA18135FBB5DAB296542A3 /* Pods-CloudSightExampleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CloudSightExampleUITests/Info.plist;
